@@ -11,6 +11,6 @@ for subscription in sub_list:
     try:
         domain = clearbit.NameToDomain.find(name=subscription)
         company_data = clearbit.Enrichment.find(domain=domain['domain'])
+
     except:
         print("error")
-
